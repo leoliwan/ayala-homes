@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,800,400i");
+@import url("https://fonts.googleapis.com/css?family=Niconne");
+body {
+  font-family: Montserrat;
+  padding: 0;
+  margin: 0; }
+
+/* -- Navbar -- */
+.navbar {
+  background: rgba(0, 160, 253, 0.5);
+  z-index: 1; }
+
+.navbar ul li a {
+  color: #fff !important; }
+
+.navbar ul li a:hover {
+  color: rgba(255, 145, 0, 0.753) !important; }
+
+.navbar .contact {
+  border-radius: 0; }
+
+.dropdown-menu {
+  padding: 2em;
+  background-color: rgba(0, 160, 253, 0.5); }
+  .dropdown-menu a {
+    font-size: 24px !important;
+    color: #fff; }
+    .dropdown-menu a:hover {
+      color: rgba(255, 145, 0, 0.753); }
+
+/*---- Logo --- */
+.navbar-brand {
+  font-family: 'Niconne', cursive;
+  color: #fff !important;
+  font-size: 2em;
+  font-weight: 500; }
+  .navbar-brand .homes {
+    color: rgba(255, 145, 0, 0.753); }
+
+#videoWrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  overflow: hidden; }
+  #videoWrapper video {
+    min-width: 100%;
+    min-height: 100%; }
+
+.background-overlay {
+  margin-top: 75px;
+  height: 550px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 160, 253, 0.5); }
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .content h1 {
+    font-size: 5em;
+    font-weight: 500;
+    color: #fff; }
+  .content p {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1;
+    color: #fff; }
+
+/* Search Form */
+.search-inputs {
+  position: relative; }
+  .search-inputs .product-search {
+    width: 100%;
+    height: 50px !important;
+    border-radius: 40px;
+    border: 2px solid rgba(0, 160, 253, 0.5);
+    padding: 18px;
+    padding-right: 144px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .search-inputs .product-search:hover {
+      background-color: rgba(0, 160, 253, 0.381);
+      color: #fff;
+      border: 2px solid #fff;
+      transition: all .5s ease-in-out;
+      -webkit-transition: all .8s ease-in-out; }
+  .search-inputs .search {
+    width: 138px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: rgba(255, 145, 0, 0.753);
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 8.5px;
+    right: 8.5px;
+    font-size: 20px;
+    cursor: pointer; }
+    .search-inputs .search:hover {
+      background-color: rgba(169, 96, 0, 0.753);
+      transition: all .5s ease-in-out;
+      -webkit-transition: all .8s ease-in-out; }
+
+/* Property */
+.property {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s; }
+  .property img {
+    height: 250px;
+    width: 100%;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+  .property:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  .property .overlay {
+    background: rgba(0, 160, 253, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    -webkit-transition: .8s;
+    transition: .8s; }
+  .property .overlay:hover {
+    background: rgba(0, 160, 253, 0.7) !important; }
+  .property h4 {
+    color: #fff; }
+
+.prop_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+/*Explore Heading*/
+.explore_head {
+  min-height: 350px !important;
+  background-color: rgba(0, 160, 253, 0.5);
+  background-image: url("../img/kitchen.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+  color: white;
+  position: relative;
+  overflow: hidden; }
+  .explore_head a {
+    border-radius: 0;
+    border: 2px solid #fff;
+    color: #fff; }
+    .explore_head a:hover {
+      background: rgba(0, 160, 253, 0.5); }
+
+@media (min-width: 725px) {
+  .explore_head {
+    padding: 6em 0; }
+  .explore_head::before,
+  .explore_head::after {
+    content: '';
+    display: block;
+    background: rgba(0, 160, 253, 0.9);
+    position: absolute;
+    width: 100%;
+    border: 1em solid white;
+    /*white*/ }
+  .explore_head::before {
+    top: 0;
+    bottom: -1em;
+    transform: skewX(60deg);
+    left: -100%; }
+  .explore_head::after {
+    top: -1em;
+    bottom: 0;
+    transform: skewX(60deg);
+    right: -100%; }
+  .container--explore {
+    width: 70%; } }
+
+@media (max-width: 725px) {
+  .explore_head h1 {
+    font-size: 50px; }
+  .explore_head p {
+    margin-top: 40px; } }
+
+@media (max-width: 500px) {
+  .explore_head h1 {
+    font-size: 40px; }
+  .explore_head p {
+    margin-top: 50px; } }
+
+/* Explore Section */
+#exploreSection h3 {
+  font-weight: 300;
+  color: rgba(0, 160, 253, 0.5); }
+
+#exploreSection p {
+  font-weight: 200;
+  color: #111; }
+
+/* Contact */
+#contact i {
+  color: #fff; }
+
+/* Footer */
+.social-link i {
+  font-size: 24px;
+  padding: 10px; }
+  .social-link i:hover {
+    color: rgba(255, 145, 0, 0.753); }
